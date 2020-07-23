@@ -1,5 +1,6 @@
 package com.example.android.knowyourfacts;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+
+import java.util.Random;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,8 @@ public class FragmentNext extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private FrameLayout frameLayout;
+    private static final String[] colors = new String[]{"#ebe831","#b631eb","#eb31d5","#9DD859"};
 
     public FragmentNext() {
         // Required empty public constructor
@@ -59,6 +66,19 @@ public class FragmentNext extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_next, container, false);
+        View view = inflater.inflate(R.layout.fragment_next, container, false);
+        Button btnChange = view.findViewById(R.id.btnColourFragNext);
+        frameLayout = view.findViewById(R.id.fragNext);
+
+        btnChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Random random = new Random();
+                int randIndex = random.nextInt(colors.length);
+                String color = colors[randIndex];
+                frameLayout.setBackgroundColor(Color.parseColor(color));
+            }
+        });
+        return view;
     }
 }
