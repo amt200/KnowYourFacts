@@ -3,12 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentNext">
+    android:layout_margin="20dp"
+    android:background="#9DD859"
+    tools:context=".FragmentPrevious">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvFragNextFact1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="It's against the law to have a pet dog in Iceland!" />
+
+    <TextView
+        android:id="@+id/tvFragNextFact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Like fingerprints, everyone's tongue print is different!" />
+
+    <TextView
+        android:id="@+id/tvFragNextFact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Most dust particles in your house are made from dead skin!" />
+
+    <Button
+        android:id="@+id/btnColourFragNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Change colour" />
 
 </FrameLayout>

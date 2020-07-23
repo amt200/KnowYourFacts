@@ -3,12 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentRandom">
+    android:layout_margin="20dp"
+    android:background="#EA5E5E"
+    tools:context=".FragmentPrevious">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvFragRandomFact1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="'Rhythm' is the longest English word without a vowel." />
+
+    <TextView
+        android:id="@+id/tvFragRandomFact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="In 1386, a pig in France was executed by public hanging for the murder of a child" />
+
+    <TextView
+        android:id="@+id/tvFragRandomFact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="A cockroach can live several weeks with its head cut off!" />
+
+    <Button
+        android:id="@+id/btnColourFragRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Change colour" />
 
 </FrameLayout>

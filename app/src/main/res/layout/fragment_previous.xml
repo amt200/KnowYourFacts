@@ -3,12 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="#74B8ED"
     tools:context=".FragmentPrevious">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvFragPrevFact1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Human thigh bones are stronger than concrete." />
+
+    <TextView
+        android:id="@+id/tvFragPrevFact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="You can't kill yourself by holding your breath." />
+
+    <TextView
+        android:id="@+id/tvFragPrevFact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="There is a city called Rome on every continent." />
+
+    <Button
+        android:id="@+id/btnColourFragPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Change colour" />
 
 </FrameLayout>
